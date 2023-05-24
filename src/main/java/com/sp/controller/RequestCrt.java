@@ -24,6 +24,7 @@ public class RequestCrt {
     @RequestMapping(value = {"/cardview"}, method = RequestMethod.GET)
     public String card(Model model){
         model.addAttribute("myCard", cartDAO.getCart(0));
+
         return "card";
     }
 

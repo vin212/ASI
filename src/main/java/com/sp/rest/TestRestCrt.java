@@ -22,7 +22,7 @@ public class TestRestCrt {
 
     @RequestMapping(method=RequestMethod.GET,value="/card/{id}")
     public Cart getCard(@PathVariable String id) {
-    	Cart c=serviceC.getCart(Integer.valueOf(id));
+    	Cart c = serviceC.getCart(Integer.valueOf(id));
         return c;
     }
 }

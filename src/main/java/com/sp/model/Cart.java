@@ -7,6 +7,7 @@ public class Cart {
 	private String description;
 	private String affinity;
 	private int hp;
+	private String imageUrl;
 	private int defence;
 	private int energy;
 	private int attack;
@@ -15,13 +16,14 @@ public class Cart {
 
 	}
 
-	public Cart(int id, String name, String family, String description, String affinity, int hp, int defence, int energy, int attack)
+	public Cart(int id, String name, String family, String description, String affinity, String imageUrl, int hp, int defence, int energy, int attack)
 	{
 		this.id = id;
 		this.name = name;
 		this.family = family;
 		this.description = description;
 		this.affinity = affinity;
+		this.imageUrl = imageUrl;
 		this.hp = hp;
 		this.defence = defence;
 		this.energy = energy;
@@ -53,6 +55,10 @@ public class Cart {
 		return affinity;
 	}
 
+	public String getImageUrl()
+	{
+		return imageUrl;
+	}
 	public int getHp()
 	{
 		return hp;
@@ -99,6 +105,10 @@ public class Cart {
 		this.affinity =  affinity;
 	}
 
+	public void setImageUrl(String imageUrl)
+	{
+		this.imageUrl =  imageUrl;
+	}
 	public void setHp(int hp)
 	{
 		this.hp = hp;
@@ -121,9 +131,16 @@ public class Cart {
 
 	@Override
 	public String toString() {
-		return "HERO ["+this.id+"]: name:"
-	+this.name+", family:"+this.family+", description:"+this.description+" affinity:"+this.affinity
-	+" hp:"+this.hp + " defence:"+this.defence + " energy:"+this.energy + " attack :"+this.attack ;
+		return "HERO ["+this.id+
+	"]: name:"	+this.name+
+	", family:"+this.family+
+	", description:"+this.description+
+	" affinity:"+this.affinity	+
+	" imageUrl:"+this.imageUrl+
+	" hp:"+this.hp +
+	" defence:"+this.defence +
+	" energy:"+this.energy +
+	" attack :"+this.attack ;
 	}
 
 
