@@ -14,7 +14,7 @@ import com.sp.model.Cart;
 @RestController
 public class TestRestCrt {
     @Autowired
-    serviceCard serviceC;
+    serviceCard serviceC;    
     
     @RequestMapping(method=RequestMethod.POST,value="/card")
     public void addCard(@RequestBody Cart c) {
