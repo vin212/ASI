@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8" />
     <title>Welcome</title>
@@ -31,11 +31,17 @@
         .card p {
             margin-bottom: 5px;
         }
+
+        .card img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
 <div class="card">
     <h2 th:text="${myCard.name}">...</h2>
+    <img th:src="${myCard.imageUrl}" th:alt="'Image du personnage '+${myCard.name}">
     <p th:text="${myCard.description}">...</p>
     <p th:text="'Famille :    '+${myCard.family}">...</p>
     <p th:text="'Affinité :    '+${myCard.affinity}">...</p>

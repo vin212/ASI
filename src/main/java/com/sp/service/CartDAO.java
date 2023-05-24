@@ -12,13 +12,10 @@ public class CartDAO {
 
 	private List<Cart> cards = new ArrayList<Cart>();
 
-	public void addCart(Cart card) {
-		Optional<Cart> optional = cards.stream()
-				.filter(x -> x.getId() == card.getId())
-				.findFirst();
-		if(!optional.isPresent()) {//Check whether optional has element you are looking for
-			// cards.add(card);
-		}
+	public int addCart(Cart card) {
+		card.setId(cards.size() +1);
+		cards.add(card);
+		return card.getId();
 	}
 
       public Cart getCart(int id) {
