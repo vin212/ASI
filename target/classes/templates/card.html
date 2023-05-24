@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2 th:text="${myCard.name}">...</h2>
+    <p th:text="${myCard.description}">...</p>
+    <p th:text="'Famille :    '+${myCard.family}">...</p>
+    <p th:text="'Affinité :    '+${myCard.affinity}">...</p>
+    <p th:text="'HP :    '+${myCard.hp}">...</p>
+    <p th:text="'Energie :    '+${myCard.energy}">...</p>
+    <p th:text="'Attaque :    '+${myCard.attack}">...</p>
+    <p th:text="'Défense :    '+${myCard.defence}">...</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}" />
+</head>
+<body>
+<h1>Welcome</h1>
+<div>
+    <img class="uk-comment-avatar" src="/image/img1.jpg" width="80"
+         height="80" alt="">
+    <ul>
+        <li><a href="#">First Introduction</a></li>
+        <li><a href="#">More Info</a></li>
+    </ul>
+</div>
+<div>
+    <p th:utext="${messageLocal}">...</p>
+</div>
+</body>
+</html>
