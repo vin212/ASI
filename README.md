@@ -17,6 +17,10 @@
 
 * L'architecture est représentée en tiers 3 soit, une partie client, une partie web serveur et une partie donnée.
 
+## MCD de notre BDD : 
+
+![MCD](MCD.png)
+
 ### 1) La partie Client :
 Dans le cas du projet, le client est représenté par une application web ou l'utilisateur peut utiliser via POSTMAN ou curl (ou autre)
 
