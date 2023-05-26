@@ -13,13 +13,17 @@
 
 ## Description Architecture : 
 
-![architechutre simplifier server-client](archi.drawio.png)
+![architecture simplifiée server-client](archi.drawio.png)
 
 * L'architecture est représentée en tiers 3 soit, une partie client, une partie web serveur et une partie donnée.
 
 ## MCD de notre BDD : 
 
 ![MCD](MCD.png)
+
+## Diagramme de séquence de l'achat d'une carte :
+
+![Diagramme de séquence de l'achat d'une carte](diagramSequenceCarte.png)
 
 ### 1) La partie Client :
 Dans le cas du projet, le client est représenté par une application web ou l'utilisateur peut utiliser via POSTMAN ou curl (ou autre)
